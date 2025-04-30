@@ -1,38 +1,87 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: black;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.landing-page {
+  display: flex;
+  height: 100vh;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.left-section {
+  flex: 3; /* Mengambil 3/4 dari layar */
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
 }
+
+.bmw-logo {
+  position: absolute;
+  top: 45px;
+  left: 15px;
+  width: 215px;
+}
+
+.performance-text {
+  font-size: 47px;
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+  position: absolute;
+  top: 180px; /* Geser teks lebih ke atas */
+}
+
+.technology-text {
+  font-size: 47px;
+  font-weight: normal;
+  text-align: center;
+  position: absolute;
+  bottom: 150px;
+  width: 100%;
+  left: -430px; /* Geser sedikit ke kiri */
+}
+
+.highlight {
+  color: white;
+  font-weight: bold;
+}
+
+.right-section {
+  flex: 2; /* 2/4 dari layar */
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 20px;
+}
+
+.quote {
+  font-size: 20px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+
+.bmw-i8 {
+  position: absolute;
+  bottom: 60px; /* Menempatkan di bagian bawah */
+  right: 130px; /* Menempatkan di pojok kanan */
+  width: 100%;
+  max-width: 625px;
+}
+
+h2 {
+  font-size: 32px;
+  font-weight: normal; 
+  position: absolute;
+  bottom: 20px; 
+  right: 150px; 
+}
+
