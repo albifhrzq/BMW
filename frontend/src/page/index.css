@@ -33,7 +33,7 @@ button {
 }
 
 /* Media queries untuk responsivitas */
-@media screen and (max-width: 1400px) {
+@media screen and (max-width: 90%) {
   .main-container {
     transform: scale(0.75);
     width: 133.33% !important; /* 1/0.75 = 1.3333 */

@@ -2,6 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
 import LoginPage from './page/loginpage';
 import MainPage from './page/index';
+import FindPage from './page/find';
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   // Fungsi untuk menangani login
@@ -20,11 +21,17 @@ const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
           element={<MainPage />} 
         />
         
+        {/* Rute untuk halaman Find Your BMW */}
+        <Route 
+          path="/find" 
+          element={<FindPage />}
+        />
         {/* Rute untuk halaman login */}
         <Route 
           path="/login" 
           element={<LoginPage onLogin={handleLogin} />} 
         />
+
 
         {/* Rute fallback jika URL tidak ditemukan */}
         <Route 
