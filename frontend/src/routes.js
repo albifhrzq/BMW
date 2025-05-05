@@ -1,0 +1,39 @@
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom';
+import LoginPage from './page/loginpage';
+import MainPage from './page/index';
+
+const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
+  // Fungsi untuk menangani login
+  const handleLogin = () => {
+    setIsLoggedIn(true);
+    // Redirect ke halaman utama setelah login
+    return <Navigate to="/" />;
+  };
+
+  return (
+    <Router>
+      <Routes>
+        {/* Landing page sebagai halaman utama */}
+        <Route 
+          path="/" 
+          element={<MainPage />} 
+        />
+        
+        {/* Rute untuk halaman login */}
+        <Route 
+          path="/login" 
+          element={<LoginPage onLogin={handleLogin} />} 
+        />
+
+        {/* Rute fallback jika URL tidak ditemukan */}
+        <Route 
+          path="*" 
+          element={<Navigate to="/" />} 
+        />
+      </Routes>
+    </Router>
+  );
+};
+
+export default AppRoutes; 
