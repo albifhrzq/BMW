@@ -1,41 +1,77 @@
+/* Reset dasar */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  overflow-x: hidden; /* Memastikan tidak ada scroll horizontal */
+}
+
+/* Container utama: membungkus seluruh konten dengan padding kecil ke kiri dan kanan */
 .main-container {
-    width: 80%;
-    margin: auto;
-    text-align: center;
-    padding: 30px;
-  }
-  
-  h1 {
-    font-size: 2em;
-    color: #333;
-  }
-  
-  .category {
-    background: white;
-    padding: 20px;
-    margin: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  h2 {
-    margin-bottom: 15px;
-  }
-  
-  .car {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 15px;
-  }
-  
-  .car img {
-    width: 250px;
-    height: auto;
-    border-radius: 8px;
-  }
-  
-  .car p {
-    font-size: 1em;
-    color: #555;
-  }
+  max-width: 100%; /* Sesuaikan dengan kebutuhan */
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 10px; /* Padding horizontal kecil */
+}
+
+/* Header */
+.header {
+  display: flex;
+  align-items: flex-start;
+  padding-top: 50px;
+  padding-left: 10px;  /* Dikurangi agar tidak terlalu jauh */
+}
+
+/* Judul Utama */
+.title {
+  font-size: 2.5em;
+  font-weight: normal;
+  color: black;
+  margin: 70px 10px 90px; /* Margin seragam kiri dan kanan */
+}
+
+/* Divider */
+.divider {
+  width: 100%;       /* Menyesuaikan dengan lebar container */
+  margin: 60px 0;
+  border: 1px solid #ccc;
+}
+
+/* Judul kategori */
+.category h2 {
+  font-size: 1.8em;
+  font-weight: normal;
+  color: black;
+  text-align: left;
+  padding-left: 10px;
+  margin-bottom: 20px;
+}
+
+/* Grouping untuk kartu mobil dengan layout grid 3 kolom */
+.car-group {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 15px;
+}
+
+/* Styling untuk setiap kartu mobil */
+.car {
+  text-align: center;
+}
+
+/* Styling untuk gambar mobil */
+.car img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Styling untuk teks deskripsi mobil */
+.car p {
+  font-size: 1em;
+  color: #555;
+}
