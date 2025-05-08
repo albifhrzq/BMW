@@ -15,12 +15,12 @@ export default function Main() {
         <h1 className="title">Find Your BMW.</h1>
       </div>
 
-      {/* BMW Z4 */}
+
       <div className="category">
-        <h2>Z4</h2>
+        <h1>Z4</h1>
         <div className="car-group">
           <div className="car">
-            <img src="path/to/z4-roadster.jpg" alt="BMW Z4 Roadster" />
+            <img src="./images/bmw_z4_roadster.png" alt="BMW Z4 Roadster" />
             <p>
               BMW Z4 Roadster<br />
               Gasoline<br />
@@ -28,7 +28,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/z4-m40i-roadster.jpg" alt="BMW Z4 M40i Roadster" />
+            <img src="./images/bmw_z4_m401.png" alt="BMW Z4 M40i Roadster" />
             <p>
               BMW Z4 M40i Roadster<br />
               Gasoline<br />
@@ -39,10 +39,8 @@ export default function Main() {
       </div>
 
       <hr className="divider" />
-
-      {/* BMW i */}
       <div className="category">
-        <h2>BMW i</h2>
+        <h1>BMW i</h1>
         <div className="car-group">
           <div className="car">
             <img src="path/to/ix.jpg" alt="BMW iX" />
@@ -96,10 +94,8 @@ export default function Main() {
       </div>
 
       <hr className="divider" />
-
-      {/* BMW X */}
       <div className="category">
-        <h2>BMW X</h2>
+        <h1>BMW X</h1>
         <div className="car-group">
           <div className="car">
             <img src="path/to/xm.jpg" alt="BMW XM" />
@@ -151,6 +147,133 @@ export default function Main() {
           </div>
         </div>
       </div>
+
+      <hr className="divider" />
+      <div className="category">
+        <h1>BMW M</h1>
+        <div className="car-group">
+          <div className="car">
+            <img src="path/to/xm.jpg" alt="BMW XM" />
+            <p>
+              BMW M2 Coupe<br />
+              Gasoline<br />
+              Start From Rp.2.080.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/x7.jpg" alt="BMW X7" />
+            <p>
+              BMW M3 Comp Touring<br />
+              Gasoline<br />
+              Start From Rp.2.885.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/x3.jpg" alt="BMW X3" />
+            <p>
+              BMW M4 CS<br />
+              Gasoline<br />
+              Start From Rp.3.499.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/ix.jpg" alt="BMW iX" />
+            <p>
+              BMW M4 Coupe<br />
+              Gasoline<br />
+              Start From Rp.2.864.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/x3.jpg" alt="BMW iX1" />
+            <p>
+              BMW i5 M60 xDrive<br />
+              Full-Electric<br />
+              Start From Rp.2.830.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/x3.jpg" alt="BMW X5" />
+            <p>
+              BMW M4 Convertible<br />
+              Gasolinel<br />
+              Start From Rp.3.251.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr className="divider" />
+      <div className="category">
+        <h1>BMW 7 Series</h1>
+        <div className="car-group">
+          <div className="car">
+            <img src="path/to/xm.jpg" alt="BMW XM" />
+            <p>
+              BMW 7 Series Sedan<br />
+              Gasoline<br />
+              Start From Rp.2.741.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <hr className="divider" />
+<div className="category">
+  <h1>BMW 5 Series</h1>
+  <div className="car-group">
+    <div className="car">
+      <img src="path/to/xm.jpg" alt="BMW XM" />
+      <p>
+        BMW 5 Series Sedan<br />
+        Gasoline<br />
+        Start From Rp.1.507.000.000
+      </p>
     </div>
+  </div>
+</div>
+
+<hr className="divider" />
+<div className="category">
+        <h1>BMW 4 Series</h1>
+        <div className="car-group">
+          <div className="car">
+            <img src="path/to/z4-roadster.jpg" alt="BMW Z4 Roadster" />
+            <p>
+              BMW 4 Series Coupe<br />
+              Gasoline<br />
+              Start From Rp.1.771.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/z4-m40i-roadster.jpg" alt="BMW Z4 M40i Roadster" />
+            <p>
+              BMW 4 Series Convertible<br />
+              Gasoline<br />
+              Start From Rp.1.934.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+
+<hr className="divider" />
+<div className="category">
+  <h1>BMW 3 Series</h1>
+  <div className="car-group">
+    <div className="car">
+      <img src="path/to/xm.jpg" alt="BMW XM" />
+      <p>
+        BMW 3 Series Sedan<br />
+        Gasoline<br />
+        Start From Rp.1.205.000.000
+      </p>
+    </div>
+  </div>
+</div>
+<hr className="divider" />
+
+    </div>
+
+    
   );
 }

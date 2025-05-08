@@ -5,12 +5,6 @@
   box-sizing: border-box;
 }
 
-html,
-body {
-  width: 100%;
-  overflow-x: hidden; /* Memastikan tidak ada scroll horizontal */
-}
-
 /* Container utama: membungkus seluruh konten dengan padding kecil ke kiri dan kanan */
 .main-container {
   max-width: 100%; /* Sesuaikan dengan kebutuhan */
@@ -32,7 +26,7 @@ body {
   font-size: 2.5em;
   font-weight: normal;
   color: black;
-  margin: 70px 10px 90px; /* Margin seragam kiri dan kanan */
+  margin: 70px 85px 90px; /* Margin seragam kiri dan kanan */
 }
 
 /* Divider */
@@ -43,35 +37,48 @@ body {
 }
 
 /* Judul kategori */
-.category h2 {
-  font-size: 1.8em;
+.category h1 {
+  font-size: 32px;
   font-weight: normal;
   color: black;
   text-align: left;
-  padding-left: 10px;
-  margin-bottom: 20px;
+  padding-left: 100px;
+  margin-bottom: 50px;
 }
 
 /* Grouping untuk kartu mobil dengan layout grid 3 kolom */
 .car-group {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 15px;
+  gap: 20px;
+  justify-items: center;
 }
 
 /* Styling untuk setiap kartu mobil */
 .car {
   text-align: center;
+  padding: 10px;
+  border: 1px solid #eaeaea; /* opsional, untuk membedakan kartu */
+  border-radius: 8px;
+  width: 100%;
+  background-color: #fff;
+  box-sizing: border-box;
 }
 
-/* Styling untuk gambar mobil */
+/* Styling untuk gambar mobil agar ukurannya sama */
 .car img {
   width: 100%;
+  height: 190px; /* atur tinggi sesuai keinginan, misalnya 200px */
+  object-fit: contain; /* memastikan gambar memenuhi area meski aspek rasio berbeda */
   border-radius: 8px;
+  display: block;
+  margin: 0 auto;
 }
 
 /* Styling untuk teks deskripsi mobil */
 .car p {
-  font-size: 1em;
+  font-size: 20px; /* sesuaikan besar teks sesuai keinginan */
   color: #555;
+  margin: 10px 0 0;
+  line-height: 1.3;
 }
