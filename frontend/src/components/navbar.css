@@ -1,0 +1,58 @@
+/* Styling untuk navbar */
+.flex-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: relative;
+  z-index: 10;
+}
+
+.regroup {
+  display: flex;
+  align-items: center;
+}
+
+.profile-bold {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/profile-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-right: 15px;
+}
+
+.location-outline {
+  width: 24px;
+  height: 24px;
+  background-image: url('../assets/location-icon.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.rectangle, .rectangle-1, .rectangle-2 {
+  padding: 10px 15px;
+  border-radius: 4px;
+  margin: 0 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.rectangle:hover, .rectangle-1:hover, .rectangle-2:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.contact-us, .models, .more {
+  font-family: 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  color: #333;
+}
+
+.image {
+  width: 50px;
+  height: 50px;
+  background-image: url('../assets/bmw-logo.svg');
+  background-size: contain;
+  background-repeat: no-repeat;
+} 
