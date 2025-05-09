@@ -43,7 +43,7 @@ export default function Main() {
         <h1>BMW i</h1>
         <div className="car-group">
           <div className="car">
-            <img src="path/to/ix.jpg" alt="BMW iX" />
+            <img src="./images/bmw_ix.png" alt="BMW iX" />
             <p>
               BMW iX<br />
               Full-Electric<br />
@@ -51,7 +51,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/i7.jpg" alt="BMW i7" />
+            <img src="./images/bmw_i7.png" alt="BMW i7" />
             <p>
               BMW i7<br />
               Full-Electric<br />
@@ -59,7 +59,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/i5.jpg" alt="BMW i5" />
+            <img src="./images/bmw_i5.png" alt="BMW i5" />
             <p>
               BMW i5<br />
               Full-Electric<br />
@@ -67,7 +67,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/i5.jpg" alt="BMW i5 M60 xDrive" />
+            <img src="./images/bmw_i5_m60.png" alt="BMW i5 M60 xDrive" />
             <p>
               BMW i5 M60 xDrive<br />
               Full-Electric<br />
@@ -75,7 +75,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/i5.jpg" alt="BMW i4" />
+            <img src="./images/bmw_i4.png" alt="BMW i4" />
             <p>
               BMW i4<br />
               Full-Electric<br />
@@ -83,7 +83,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/i5.jpg" alt="BMW iX1" />
+            <img src="./images/bmw_ix1.png" alt="BMW iX1" />
             <p>
               BMW iX1<br />
               Full-Electric<br />
@@ -98,7 +98,7 @@ export default function Main() {
         <h1>BMW X</h1>
         <div className="car-group">
           <div className="car">
-            <img src="path/to/xm.jpg" alt="BMW XM" />
+            <img src="./images/bmw_xm.png" alt="BMW XM" />
             <p>
               BMW XM<br />
               Plug-in-Hybrid<br />
@@ -106,15 +106,15 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x7.jpg" alt="BMW X7" />
+            <img src="./images/bmw_x1.png" alt="BMW X7" />
             <p>
-              BMW X7<br />
+              BMW X1<br />
               Full-Electric<br />
               Start From Rp.1.025.000.000
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x3.jpg" alt="BMW X3" />
+            <img src="./images/bmw_x3.png" alt="BMW X3" />
             <p>
               BMW X3<br />
               Full-Electric<br />
@@ -122,7 +122,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/ix.jpg" alt="BMW iX" />
+            <img src="./images/bmw_ix.png" alt="BMW iX" />
             <p>
               BMW iX<br />
               Full-Electric<br />
@@ -130,7 +130,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x3.jpg" alt="BMW iX1" />
+            <img src="./images/bmw_ix1.png" alt="BMW iX1" />
             <p>
               BMW iX1<br />
               Full-Electric<br />
@@ -138,7 +138,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x3.jpg" alt="BMW X5" />
+            <img src="./images/bmw_x5.png" alt="BMW X5" />
             <p>
               BMW X5<br />
               Full-Electric<br />
@@ -153,7 +153,7 @@ export default function Main() {
         <h1>BMW M</h1>
         <div className="car-group">
           <div className="car">
-            <img src="path/to/xm.jpg" alt="BMW XM" />
+            <img src="./images/bmw_m2_coupe.png" alt="BMW m2" />
             <p>
               BMW M2 Coupe<br />
               Gasoline<br />
@@ -161,7 +161,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x7.jpg" alt="BMW X7" />
+            <img src="./images/bmw_m3.png" alt="BMW m3" />
             <p>
               BMW M3 Comp Touring<br />
               Gasoline<br />
@@ -169,7 +169,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/x3.jpg" alt="BMW X3" />
+            <img src="./images/bmw_m4.png" alt="BMW m4" />
             <p>
               BMW M4 CS<br />
               Gasoline<br />
@@ -177,7 +177,7 @@ export default function Main() {
             </p>
           </div>
           <div className="car">
-            <img src="path/to/ix.jpg" alt="BMW iX" />
+            <img src="./images/bmw_4.png" alt="BMW 4" />
             <p>
               BMW M4 Coupe<br />
               Gasoline<br />
@@ -270,7 +270,30 @@ export default function Main() {
     </div>
   </div>
 </div>
+
 <hr className="divider" />
+<div className="category">
+        <h1>BMW 2 Series</h1>
+        <div className="car-group">
+          <div className="car">
+            <img src="path/to/z4-roadster.jpg" alt="BMW Z4 Roadster" />
+            <p>
+              BMW M2 Coupe<br />
+              Gasoline<br />
+              Start From Rp.1.423.000.000
+            </p>
+          </div>
+          <div className="car">
+            <img src="path/to/z4-m40i-roadster.jpg" alt="BMW Z4 M40i Roadster" />
+            <p>
+              BMW M2 Gran Coupe<br />
+              Gasoline<br />
+              Start From Rp.935.000.000
+            </p>
+          </div>
+        </div>
+      </div>
+      <hr className="divider" />
 
     </div>
 
