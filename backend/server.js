@@ -10,6 +10,9 @@ const PORT = process.env.PORT || 5000;
 app.use(cors());
 app.use(express.json());
 
+// Serve static files from backend/public
+app.use('/images', express.static(path.join(__dirname, 'public/images')));
+
 // Routes
 app.use('/api/cars', require('./routes/carRoutes'));
 app.use('/api/categories', require('./routes/categoryRoutes'));
