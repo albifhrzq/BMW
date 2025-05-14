@@ -95,7 +95,7 @@ body {
     object-fit: cover;
   }
   
-  /* Carousel Indicators */
+  /* Carousel Indicator */
   .carousel-indicators {
     position: absolute;
     bottom: 20px;
