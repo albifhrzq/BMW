@@ -4,6 +4,7 @@ import LoginPage from './page/loginpage';
 import MainPage from './page/index';
 import FindPage from './page/find';
 import DetailPage from './page/detail';
+import TestPage from './page/test';
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   // Fungsi untuk menangani login
@@ -32,6 +33,12 @@ const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
         <Route 
           path="/detail" 
           element={<DetailPage />}
+        />
+
+        {/* Rute untuk halaman test */}
+        <Route 
+          path="/test" 
+          element={<TestPage />}
         />
 
         {/* Rute untuk halaman login */}
