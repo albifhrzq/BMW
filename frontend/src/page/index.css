@@ -7,9 +7,7 @@
 
 .main-container {
   overflow: hidden;
-  transform: scale();
-  transform-origin: top;
-  width: 125% !important; /* 1/0.8 = 1.25 atau 125% */
+  width: 100% !important;
   margin: 0 !important;
 }
 
@@ -33,17 +31,19 @@ button {
 }
 
 /* Media queries untuk responsivitas */
-@media screen and (max-width: 90%) {
+@media screen and (max-width: 1440px) {
   .main-container {
-    transform: scale(0.75);
-    width: 133.33% !important; /* 1/0.75 = 1.3333 */
+    transform: scale(0.9);
+    transform-origin: top left;
+    width: 110% !important;
   }
 }
 
 @media screen and (max-width: 1200px) {
   .main-container {
-    transform: scale(0.7);
-    width: 142.85% !important; /* 1/0.7 = 1.4285 */
+    transform: scale(0.8);
+    transform-origin: top left;
+    width: 120% !important;
   }
 }
 

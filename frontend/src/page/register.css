@@ -1,0 +1,179 @@
+.register-page {
+  display: flex;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.left-section-register {
+  flex: 1;
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  position: relative;
+}
+
+.bmw-logo-register {
+  width: 120px;
+  margin-bottom: 80px;
+}
+
+.register-heading {
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.2;
+  margin-bottom: 60px;
+}
+
+.highlight {
+  font-weight: bold;
+  color: white;
+}
+
+.register-benefits {
+  margin-top: auto;
+  margin-bottom: 40px;
+}
+
+.register-benefits p {
+  margin: 12px 0;
+  font-size: 18px;
+  opacity: 0.9;
+}
+
+.right-section-register {
+  flex: 1.5;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+}
+
+.register-container {
+  width: 100%;
+  max-width: 500px;
+  padding: 40px;
+  border-radius: 8px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.register-title {
+  font-size: 28px;
+  color: #000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+
+.register-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #e0e0e0;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s;
+}
+
+.form-group input:focus {
+  border-color: #1c69d4;
+  outline: none;
+}
+
+.register-button {
+  margin-top: 15px;
+  padding: 14px 30px;
+  background-color: #1c69d4; /* BMW blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.register-button:hover {
+  background-color: #004c8c;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.register-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.error-message {
+  background-color: #ffebee;
+  color: #d32f2f;
+  padding: 12px;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.login-link {
+  margin-top: 25px;
+  text-align: center;
+  font-size: 14px;
+  color: #555;
+}
+
+.login-link span {
+  color: #1c69d4;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.login-link span:hover {
+  color: #004c8c;
+  text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 900px) {
+  .register-page {
+    flex-direction: column;
+    height: auto;
+  }
+  
+  .left-section-register {
+    padding: 30px 20px;
+  }
+  
+  .register-heading {
+    font-size: 32px;
+    margin-bottom: 30px;
+  }
+  
+  .register-benefits {
+    margin-bottom: 30px;
+  }
+  
+  .right-section-register {
+    padding: 20px;
+  }
+  
+  .register-container {
+    padding: 25px;
+  }
+} 

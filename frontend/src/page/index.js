@@ -5,37 +5,53 @@ import "./index.css";
 export default function Main() {
   const navigate = useNavigate();
 
-  const handleProfileClick = () => {
+  const handleFindClick = () => {
     navigate("/find");
+  };
+
+  const handleContactClick = () => {
+    navigate("/contact");
+  };
+
+  const handleMoreClick = () => {
+    navigate("/more");
+  };
+
+  const handleLoginClick = () => {
+    navigate("/login")
+  }
+
+  const handleHomeClick = () => {
+    navigate("/");
   };
 
   return (
     <div className="main-container">
       <div className="flex-row">
         <div className="regroup">
-          <div className="profile-bold" onClick={handleProfileClick} style={{ cursor: 'pointer' }} />
+          <div className="profile-bold" onClick={handleLoginClick} style={{ cursor: 'pointer' }} />
           <div className="location-outline" />
         </div>
-        <div className="rectangle">
+        <div className="rectangle" onClick={handleContactClick} style={{ cursor: 'pointer' }}>
           <span className="contact-us">Contact Us</span>
         </div>
-        <div className="rectangle-1">
+        <div className="rectangle-1" onClick={handleFindClick} style={{ cursor: 'pointer' }}>
           <span className="models">Models</span>
         </div>
-        <div className="rectangle-2">
+        <div className="rectangle-2" onClick={handleMoreClick} style={{ cursor: 'pointer' }}>
           <span className="more">More</span>
         </div>
-        <div className="image" />
+        <div className="image" onClick={handleHomeClick} style={{ cursor: 'pointer' }} />
       </div>
       <span className="all-new-bmw">All New BMW Z4 M40i ROADSTER</span>
       <div className="flex-row-3">
         <div className="image-4" />
         <span className="build-your-drive">
-          “Build Your Drive with the <br />
+          "Build Your Drive with the <br />
           Technology from new BMW vehicles that are currently avaible today at
-          BMW Indonesia”
+          BMW Indonesia"
         </span>
-        <div className="rectangle-5">
+        <div className="rectangle-5" onClick={handleFindClick} style={{ cursor: 'pointer' }}>
           <span className="find-your-bmw">Find Your BMW</span>
         </div>
       </div>
@@ -73,7 +89,7 @@ export default function Main() {
             conditions for more traction in real time. And the intelligent M
             xDrive allows you to adapt power distribution with distinct 4WD, 4WD
             Sport, and 2WD modes. The standard 6-piston front M compound brakes
-            are connected to BMW’s Integrated Brake System for adjustable
+            are connected to BMW's Integrated Brake System for adjustable
             responsiveness and feel. Choose black or red calipers – or upgrade
             to gold-calipered Carbon Ceramic brakes. 
           </span>
@@ -87,7 +103,7 @@ export default function Main() {
             The M8 Competition Gran Coupe's 4.4-liter V-8 engine delivers 617
             horsepower and features track-ready cooling systems, a Twin Scroll
             Bi-Turbo, and a uniquely designed dual oil pan that maintains oil
-            pressure during intense maneuvers.  An 8-speed M Sport Transmission
+            pressure during intense maneuvers.  An 8-speed M Sport Transmission
             adjusts from smooth to aggressive with the three-stage Drivelogic
             shifting system. Or take a hands-on approach with M gearshift
             paddles for manual shifting.
