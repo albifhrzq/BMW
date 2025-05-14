@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-d
 import LoginPage from './page/loginpage';
 import MainPage from './page/index';
 import FindPage from './page/find';
+import DetailPage from './page/detail';
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   // Fungsi untuk menangani login
@@ -26,6 +27,13 @@ const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
           path="/find" 
           element={<FindPage />}
         />
+
+        {/* Rute untuk halaman detail */}
+        <Route 
+          path="/detail" 
+          element={<DetailPage />}
+        />
+
         {/* Rute untuk halaman login */}
         <Route 
           path="/login" 
