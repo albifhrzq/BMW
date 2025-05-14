@@ -92,7 +92,7 @@ export default function Main() {
         </div>
 
         <div className="text-content">
-          {/* Rest of your content remains the same */}
+          {/* Rest of your content remains the sames */}
           <div className="title-section">
             <h1 className="unreal-title">BMW Z4 ROADSTER</h1>
           </div>
