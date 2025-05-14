@@ -6,6 +6,8 @@ import MainPage from './page/index';
 import FindPage from './page/find';
 import AdminPage from './page/admin';
 import ContactPage from './page/contact';
+import DetailPage from './page/detail';
+
 
 const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
   // Fungsi untuk menangani login
@@ -29,6 +31,13 @@ const AppRoutes = ({ isLoggedIn, setIsLoggedIn }) => {
           path="/find" 
           element={<FindPage />}
         />
+
+        {/* Rute untuk halaman detail */}
+        <Route 
+          path="/detail" 
+          element={<DetailPage />}
+        />
+
         {/* Rute untuk halaman login */}
         <Route 
           path="/login" 
